@@ -1,6 +1,7 @@
 package com.hms.billing;
 
 import com.hms.users.Patient;
+import com.hms.users.*;
 
 public class Billing {
 	   
@@ -37,5 +38,26 @@ public class Billing {
 
         return payments;
     }
-
+    
+    public static double monthlyPremium(User user, double amount) {
+    	HealthInsurancePlan userPlan = user.getInsurancePlan();
+    	double monthPremiun =0 ;
+    	if(user.getInsurancePlan() == null) {
+    		monthPremiun = 0;
+    	}
+    	else if(userPlan instanceof GoldPlan) {
+    		monthPremiun = userPlan.computeMonthlyPremium(amount);
+        }
+    	else if(userPlan instanceof PlatinumPlan) {
+    		monthPremiun = userPlan.computeMonthlyPremium(amount);
+        }
+    	else if(userPlan instanceof SilverPlan) {
+    		monthPremiun = userPlan.computeMonthlyPremium(amount);
+        }
+    	else if(userPlan instanceof BronzePlan) {
+    		monthPremiun = userPlan.computeMonthlyPremium(amount);
+        }    	
+    	return monthPremiun;
+    }
+    
 }

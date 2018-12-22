@@ -1,5 +1,7 @@
 package com.hms.users;
 
+import com.hms.billing.HealthInsurancePlan;
+
 public class User {
     
 	private long id;
@@ -9,6 +11,9 @@ public class User {
 	private String lastName;
 	private String gender;
 	private String email;
+	private boolean insured;
+	private HealthInsurancePlan insurancePlan;
+	
 	
 	public String getFirstName() {
 		return firstName;
@@ -39,6 +44,18 @@ public class User {
 	}
 	public void setId(long id) {
 		this.id = id;
+	}
+	public boolean isInsured() {
+		return insured;
+	}
+	public void setInsured(boolean insured) {
+		this.insured = insured;
+	}
+	public HealthInsurancePlan getInsurancePlan() {
+		return insurancePlan;
+	}
+	public void setInsurancePlan(HealthInsurancePlan insurancePlan) {
+		this.insurancePlan = insurancePlan;
 	}
 	
 }
