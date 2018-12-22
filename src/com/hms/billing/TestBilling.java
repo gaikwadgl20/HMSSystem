@@ -1,8 +1,7 @@
 package com.hms.billing;
 
-import com.hms.users.Nurse;
-import com.hms.users.Patient;
-import com.hms.users.User;
+
+import com.hms.users.*;
 
 public class TestBilling {
 
