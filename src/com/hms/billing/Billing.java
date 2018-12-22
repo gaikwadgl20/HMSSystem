@@ -1,6 +1,5 @@
 package com.hms.billing;
 
-import com.hms.users.Patient;
 import com.hms.users.*;
 
 public class Billing {
