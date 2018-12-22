@@ -11,6 +11,20 @@ public class User {
 	private String lastName;
 	private String gender;
 	private String email;
+	private int age;
+	private boolean smokes;
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public boolean isSmokes() {
+		return smokes;
+	}
+	public void setSmokes(boolean smokes) {
+		this.smokes = smokes;
+	}
 	private boolean insured;
 	private HealthInsurancePlan insurancePlan;
 	

@@ -37,7 +37,7 @@ public class Billing {
 
         return payments;
     }
-    
+  /*  
     public static double monthlyPremium(User user, double amount) {
     	HealthInsurancePlan userPlan = user.getInsurancePlan();
     	double monthPremiun =0 ;
@@ -57,6 +57,6 @@ public class Billing {
     		monthPremiun = userPlan.computeMonthlyPremium(amount);
         }    	
     	return monthPremiun;
-    }
+    }*/
     
 }

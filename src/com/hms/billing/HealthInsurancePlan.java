@@ -1,6 +1,6 @@
 package com.hms.billing;
 
-public abstract class HealthInsurancePlan {
+public abstract class HealthInsurancePlan{
     // Code for 'coverage' field goes here
     
     // Don't worry about the below code and also the InsuranceBrand class
@@ -21,5 +21,5 @@ public abstract class HealthInsurancePlan {
 		System.out.println(coverage +"Test ");
 		this.coverage = coverage;
 	}
-	public abstract double computeMonthlyPremium(double salary);
+	public abstract double computeMonthlyPremium(double salary, int age , boolean smoking);
 }

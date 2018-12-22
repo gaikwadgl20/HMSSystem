@@ -5,9 +5,8 @@ public class PlatinumPlan extends HealthInsurancePlan {
 		setCoverage(0.9);
 	}
 
-	@Override
-	public double computeMonthlyPremium(double salary) {
-		// TODO Auto-generated method stub
-		return (0.08 * salary);
+	
+	public double computeMonthlyPremium(double salary, int age, boolean smoking) {
+        return 0.08 * salary + getOfferedBy().computeMonthlyPremium(this, age, smoking);
 	}
 }
