@@ -15,7 +15,7 @@ public class TestBilling {
 		nurse.setInsurancePlan(insurancePlan);
 		
 		double monthlyPremium = Billing.monthlyPremium(nurse, 5000);
-		System.out.println(" Montly premium :" + monthlyPremium);
+		System.out.println(" Montly premium fot staff:" + monthlyPremium);
 		        
 		double[] payments = Billing.computePaymentAmount(patient, 1000.0);
 		for(double bill :payments) {
